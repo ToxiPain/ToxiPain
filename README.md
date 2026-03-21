@@ -13,10 +13,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=007BFF&center=true&vCenter=true&width=500&lines=WhatsApp+Automation+Specialist;Miembro+de+Arcane+Team;Un+weon+que+edita+c%C3%B3digo+xd" alt="Typing SVG" />
 </p>
 
-<p align="center">
-  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="Snake Contribution Graph" width="800"/>
-</p>
-
 ---
 
 ### 📊 Estadisticas:
