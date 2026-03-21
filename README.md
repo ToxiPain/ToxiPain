@@ -7,6 +7,7 @@
   <a href="https://whatsapp.com/channel/0029VbAh9dUEAKW6nbb3460i" target="_blank">
     <img src="https://img.shields.io/badge/Canal_de_WhatsApp-128C7E?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Canal WhatsApp" />
   </a>
+    </a>
 </p>
 
 <p align="center">
