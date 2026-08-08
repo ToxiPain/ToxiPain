@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  metrics:
+  github-metrics:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,7 @@ jobs:
           base: header, repositories
           plugin_lines: yes
 
-      - name: Generate Languages Metrics
+      - name: Generate Language Metrics
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.languages.svg
@@ -36,3 +36,5 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: percentage, bytes-size
+          plugin_languages_threshold: 2%
+          plugin_languages_other: yes
