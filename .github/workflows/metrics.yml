@@ -13,17 +13,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Generate Classic Metrics
+        uses: lowlighter/metrics@latest
         with:
           filename: metrics.classic.svg
           token: ${{ secrets.PROFILE }}
+          committer_token: ${{ secrets.PROFILE }}
+          committer_branch: main
           base: header, repositories
           plugin_lines: yes
 
-      - uses: lowlighter/metrics@latest
+      - name: Generate Languages Metrics
+        uses: lowlighter/metrics@latest
         with:
-          filename: metrics.languages.svg
+          filename: metrics.plugin.languages.svg
           token: ${{ secrets.PROFILE }}
+          committer_token: ${{ secrets.PROFILE }}
+          committer_branch: main
           base: ""
+          template: classic
           plugin_languages: yes
           plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage, bytes-size
