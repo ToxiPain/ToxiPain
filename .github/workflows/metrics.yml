@@ -5,6 +5,9 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   metrics:
     runs-on: ubuntu-latest
@@ -16,3 +19,11 @@ jobs:
           token: ${{ secrets.PROFILE }}
           base: header, repositories
           plugin_lines: yes
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.languages.svg
+          token: ${{ secrets.PROFILE }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_limit: 8
